@@ -46,7 +46,9 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-block btn-primary">Login</button>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-block btn-primary">Login</button>
+                </div>
             </form>
             <div class="text-center mt-3">
                 <small>

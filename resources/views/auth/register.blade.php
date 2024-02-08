@@ -56,7 +56,9 @@
                         <input type="password" name="password_confirmation" id="password_confirmation" class="form-control" required>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-block btn-primary">Register</button>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-block btn-primary">Register</button>
+                </div>
             </form>
             <div class="text-center mt-3">
                 <small>

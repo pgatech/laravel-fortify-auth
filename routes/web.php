@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Profile\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +18,8 @@ Route::view('/', 'home');
 
 Route::middleware('auth', 'verified')->group( function(){
     Route::view('/dashboard', 'dashboard');
+
+    // Update Profile
+    Route::get('profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::put('profile/edit', [ProfileController::class, 'updateProfileInformation']);
 });

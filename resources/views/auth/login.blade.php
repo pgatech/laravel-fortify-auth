@@ -14,7 +14,7 @@
                 <div class="mb-3">
                     <div class="form-group">
                         <label for="username">Username</label>
-                        <input type="username" name="username" id="username" class="form-control @error('username') is-invalid @enderror" required>
+                        <input type="text" name="username" id="username" class="form-control @error('username') is-invalid @enderror" required>
                         @error('username')
                             <div class="invalid-feedback">
                                 {{ $message }}

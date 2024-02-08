@@ -17,6 +17,6 @@ class ProfileController extends UpdateUserProfileInformation
     {
         $this->update(request()->user(), request()->all());
 
-        return back()->with('success', 'Update profile has been updated!');
+        return back()->with('status', 'Update profile has been updated!');
     }
 }

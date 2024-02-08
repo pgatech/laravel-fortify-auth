@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['title' => 'Update Profile'])
 
 @section('content')
     <div class="container">

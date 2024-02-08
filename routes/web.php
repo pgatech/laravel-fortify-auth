@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Profile\ProfileController;
+use App\Http\Controllers\Profile\UpdatePasswordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,4 +23,8 @@ Route::middleware('auth', 'verified')->group( function(){
     // Update Profile
     Route::get('profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::put('profile/edit', [ProfileController::class, 'updateProfileInformation']);
+
+    // Update Password
+    Route::get('password/edit', [UpdatePasswordController::class, 'edit'])->name('password.edit');
+    Route::put('password/edit', [UpdatePasswordController::class, 'updatePassword']);
 });

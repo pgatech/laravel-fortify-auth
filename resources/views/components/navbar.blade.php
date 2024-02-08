@@ -32,7 +32,7 @@
             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">View Profile</a></li>
               <li><a class="dropdown-item" href="{{ route('profile.edit') }}">Edit Profile</a></li>
-              <li><a class="dropdown-item" href="#">Edit Password</a></li>
+              <li><a class="dropdown-item" href="{{ route('password.edit') }}">Update Password</a></li>
               <li><hr class="dropdown-divider"></li>
               <li>
                 <a class="dropdown-item text-danger" href="/logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">Logout</a>
